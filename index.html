@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kevin Villaver</title>
+        <script src="https://kit.fontawesome.com/95bc58494a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Real Estate Broker</p>
+                <h1>Hi, I'm <span>Kevin</span><br>Villaver from Philippines</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/kevin_1.png" alt="Kevin Villaver Standing">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I'm a proud father of two, a devout basketball fan, and a firm believer in Christ. Since 2014, I've been a licensed real estate broker, prioritizing excellent service for my clients. Currently, I serve as a Corporate Broker at Bachelors Realty and Brokerage Inc., where I'm dedicated to finding the best properties for my clients' needs while ensuring they get the most value for their hard-earned money.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Customer Assistance</span><br>Deliver exceptional service.</li>
+                            <li><span>Proficiency in English</span><br>Proficient in English communication and comprehension.</li>
+                            <li><span>Digital Marketing</span><br>Market properties for sale effectively in the digital realm.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Corporate Broker at Bachelors Realty</li>
+                            <li><span>2020 - 2022</span><br>Data Entry at DBP Service Corporation</li>
+                            <li><span>2016 - 2020</span><br>Accounting Assistant at Pag-IBIG Fund</li>
+                            <li><span>2013 - 2014</span><br>Real Estate Broker at Acts Realty</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Real Estate Broker</span><br>GCR Review Center</li>
+                            <li><span>Management Accounting</span><br>Liceo de Cagayan University</li>
+                            <li><span>Social Media Marketing</span><br>Coursera</li>
+                            <li><span>IELTS Student</span><br>CEVAS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <h2>Real Estate Marketing</h2>
+                    <p>Leveraging strategic marketing techniques to showcase properties effectively, ensuring maximum exposure and attracting potential buyers or tenants.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file"></i>
+                    <h2>Documentation</h2>
+                    <p>Handling all necessary paperwork with precision and efficiency, simplifying the process for clients and ensuring compliance with legal requirements.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-landmark"></i>
+                    <h2>Home Loan Services</h2>
+                    <p>Providing guidance and assistance in navigating the complexities of securing a home loan, helping clients find suitable financing options tailored to their needs and financial situation.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------portfolio-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Market</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/House.jpg" alt="House">
+                    <div class="layer">
+                        <h3>House and Lot</h3>
+                        <p>Offering a diverse selection of houses accompanied by spacious lots, catering to various preferences and lifestyle needs of homebuyers.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/condo.jpg" alt="Condominium">
+                    <div class="layer">
+                        <h3>Condominium</h3>
+                        <p>Presenting a range of modern and stylish condominium units, providing convenience and urban living amenities for those seeking a vibrant lifestyle.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/lot2.jpg" alt="Piece of Land">
+                    <div class="layer">
+                        <h3>Lot Only</h3>
+                        <p>Providing prime land options for those looking to build their dream home from the ground up, offering flexibility and customization in a desirable location.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------------------contact--------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kevin.realestatebroker@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>09389223707</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/KevinVillaverOfficial/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kevinvillaverofficial/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kevin-villaver-realestate-broker/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://youtube.com/c/KevinVillaverOfficial"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="images/Kevin_Villaver_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="copyright">
+                <p>copyright @ Kevin. Made by <i class="fa-solid fa-heart"></i> Kevin Villaver</p>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    
+    <script>
+        
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz7CoMlOO17jtFX6KcTVIi80dYdH3iyQYyJiksNFIszbG6izFWzn7ilNyMT9OmbODqqtg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML =""      
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
